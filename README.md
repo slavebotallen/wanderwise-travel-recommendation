@@ -49,17 +49,23 @@ wanderwise-travel-recommendation-master/
 │
 ├── templates/
 │   ├── index.html
-│   └── recommendation.html
+│   ├── recommendation.html
 │
 ├── static/
+│   ├── Travel Agency Logo Advert.mp4
 │   └── screenshots/
 │       ├── form.png
-│       └── results.png
+│       ├── results.png
 │
-├── data/
-│   ├── Expanded\_Destinations.csv
-│   ├── Final\_Updated\_Expanded\_UserHistory.csv
-│   └── model.pkl
+├── code and dataset/
+│   ├── Expanded_Destinations.csv
+│   ├── Final_Updated_Expanded_Reviews.csv
+│   ├── Final_Updated_Expanded_UserHistory.csv
+│   ├── Final_Updated_Expanded_Users.csv
+│   ├── Travel_Recommendation_System.ipynb
+│   ├── final_df.csv
+│   ├── model.pkl
+│   └── label_encoders.pkl
 └── .gitignore
 
 ````
@@ -137,3 +143,6 @@ Visit `http://127.0.0.1:5000/` to test locally.
 👉 [**Try Wanderwise Here**](https://wanderwise-travel-recommendation-g90r.onrender.com)
 
 ```
+
+---
+
