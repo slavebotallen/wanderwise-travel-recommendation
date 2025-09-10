@@ -102,10 +102,12 @@ wanderwise-travel-recommendation/
 
 ---
 
-## ---
+## About Me
 ### 👤 Author
 
-**Rithik Srivastava** 📧 Email: 24082046@scale.iitrpr.ac.in
+**Rithik Srivastava** 
+
+📧 Email: 24082046@scale.iitrpr.ac.in
 
 👨‍🎓 Student Code: IITRPRAI\_24082046
 
