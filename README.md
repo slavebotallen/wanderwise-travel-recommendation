@@ -1,57 +1,45 @@
 # 🌍 Wanderwise – AI-Powered Travel Recommendation System
 
 [![Live Demo](https://img.shields.io/badge/Live-Demo-green?style=for-the-badge&logo=render)](https://wanderwise-travel-recommendation-g90r.onrender.com)
-[![GitHub repo](https://img.shields.io/badge/GitHub-Repo-black?style=for-the-badge&logo=github)](https://github.com/slavebotallen/wanderwise-travel-recommendation)
+[![GitHub Repo](https://img.shields.io/badge/GitHub-Repo-black?style=for-the-badge&logo=github)](https://github.com/slavebotallen/wanderwise-travel-recommendation)
 
-# 🌍 Wanderwise – Travel Recommendation System  
-
-A machine learning-powered **travel recommendation web application** that suggests destinations based on **user preferences, family size, and season**.  
-Built with **Flask, scikit-learn, and Bootstrap**, and deployed on **Render**.  
-
----
-
-## 🎯 Project Overview  
-- **Goal**: Simplify travel planning by giving **personalized recommendations**.  
-- **Input**: Preference (Adventure, Heritage, Beach, Hill Station), Adults, Children, Season.  
-- **Output**: Top destinations with details (Name, State, Type, Best Season).  
-- **Approach**: Hybrid ML model (Content-based + Collaborative filtering).  
-- **Deployment**: Flask + Docker + Render.  
-- **Live App**: 👉 [Wanderwise on Render](https://wanderwise-travel-recommendation-g90r.onrender.com)  
+## 📖 Overview
+**Wanderwise** is a machine learning-powered **travel recommendation web app** that suggests destinations based on **user preferences, family size, and season**.  
+Built with **Flask, scikit-learn, and Bootstrap**, and deployed on **Render** for easy access.  
 
 ---
 
-## 🤖 Model Architecture  
-
-### 🔹 Machine Learning Model  
-- **Content-Based Filtering** – Matches user inputs with attributes (destination type, season).  
-- **Collaborative Filtering** – Leverages user histories to suggest what similar users liked.  
-- **Hybrid Scoring** – Combines both approaches for more accurate and diverse results.  
-
-### 🔹 Features Used  
-- Destination category (Adventure, Heritage, etc.)  
-- Best season to visit  
-- Adults and children count  
-- User preference history  
-
-### 🔹 Artifacts  
-- `model.pkl` → trained ML model  
-- `label_encoders.pkl` → categorical encoders  
-- Datasets → `Expanded_Destinations.csv`, `Final_Updated_Expanded_UserHistory.csv`, etc.  
+## 🎯 Key Features
+- 🎯 **Personalized travel recommendations** based on group size, children, and preferences.  
+- 👨‍👩‍👧 **Family-friendly suggestions** for trips with children.  
+- 🌦 **Season-aware recommendations** to ensure the best travel experience.  
+- 🖥️ **Responsive UI** built with Bootstrap.  
+- 🚀 **Publicly deployed** with Docker + Render.  
 
 ---
 
-## 🚀 Features  
-- 🎯 Personalized travel recommendations  
-- 👨‍👩‍👧 Family-friendly suggestions (children filter)  
-- 🌦 Seasonal recommendations (best time to visit)  
-- 🖥️ Responsive UI (Bootstrap + custom CSS)  
-- 🚀 Deployed publicly on Render  
-- 📊 Submission-ready (PPTX, Report, Demo video included)  
+## 🧩 Tech Stack
+
+| Component              | Technology Used                  |
+|-----------------------|---------------------------------|
+| Backend               | Python, Flask                   |
+| Machine Learning      | scikit-learn                    |
+| Frontend              | HTML, CSS, Bootstrap, Jinja2    |
+| Deployment            | Docker, Render                  |
+| Dataset               | Custom CSV files (`Expanded_Destinations.csv`) |
 
 ---
 
-## 📂 Project Structure  
+## 🧠 Model Architecture
+- **Content-Based Filtering**: Matches user inputs to destination attributes.  
+- **Collaborative Filtering**: Suggests destinations based on similar users.  
+- **Hybrid Scoring Engine**: Combines both methods for better diversity and accuracy.  
+
+---
+
+## 📂 Project Structure
 ```
+
 wanderwise-travel-recommendation-master/
 ├── app.py
 ├── requirements.txt
@@ -61,31 +49,26 @@ wanderwise-travel-recommendation-master/
 │
 ├── templates/
 │   ├── index.html
-│   ├── recommendation.html
+│   └── recommendation.html
 │
 ├── static/
-│   ├── Travel Agency Logo Advert.mp4
 │   └── screenshots/
 │       ├── form.png
-│       ├── results.png
+│       └── results.png
 │
-├── code and dataset/
-│   ├── Expanded_Destinations.csv
-│   ├── Final_Updated_Expanded_Reviews.csv
-│   ├── Final_Updated_Expanded_UserHistory.csv
-│   ├── Final_Updated_Expanded_Users.csv
-│   ├── Travel_Recommendation_System.ipynb
-│   ├── final_df.csv
-│   ├── model.pkl
-│   └── label_encoders.pkl
+├── data/
+│   ├── Expanded\_Destinations.csv
+│   ├── Final\_Updated\_Expanded\_UserHistory.csv
+│   └── model.pkl
 └── .gitignore
-```
+
+````
 
 ---
 
-## 🛠️ Installation & Setup  
+## ⚙️ Installation & Setup
+Clone this repo and set up locally:
 
-### Local Development  
 ```bash
 git clone https://github.com/slavebotallen/wanderwise-travel-recommendation.git
 cd wanderwise-travel-recommendation-master
@@ -100,66 +83,57 @@ pip install -r requirements.txt
 
 # Run app
 python app.py
-```
+````
 
-Visit → `http://127.0.0.1:5000/`  
+Visit `http://127.0.0.1:5000/` to test locally.
 
 ---
 
-### 🚀 Deploy on Render  
-1. Fork this repo.  
-2. Link GitHub repo on [Render Dashboard](https://dashboard.render.com).  
-3. Configure:  
-   - Start command: `gunicorn app:app`  
-   - Python: 3.9+  
-   - Auto-install dependencies from `requirements.txt`  
-4. Deploy → share live link.  
+## 🚀 Deployment on Render
 
-```
+1. Fork this repo and connect it to [Render](https://render.com).
+2. Set **Start Command**: `gunicorn app:app`.
+3. Render auto-installs dependencies from `requirements.txt`.
+4. Deploy and share your live link.
 
 ---
 
 ## 📷 Screenshots
-| Input Form | Recommendations |
-|------------|-----------------|
+
+| Input Form                           | Recommendations                            |
+| ------------------------------------ | ------------------------------------------ |
 | ![Form](static/screenshots/form.png) | ![Results](static/screenshots/results.png) |
 
 ---
 
----
+## 📊 Results & Observations
 
-## 📊 Results & Observations  
-- ✅ Recommendations are **accurate & personalized**  
-- ✅ Handles family trips intelligently  
-- ✅ Responsive interface  
-- ✅ Works smoothly on Render  
+* ✅ Accurate, personalized recommendations
+* ✅ Intelligent filtering for family travel
+* ✅ Smooth UI and deployment performance
 
 ---
 
-## 📝 Future Work  
-- 💰 Budget & activity-based filters  
-- 🌦 Real-time weather & events integration  
-- 🤖 Deep learning recommenders (NCF, autoencoders)  
-- 🗄️ Database support (Postgres/MongoDB)  
-- 📱 Mobile-friendly Progressive Web App  
+## 📝 Future Work
+
+* 💰 Add **budget and activity-based filters**
+* 🌦 Integrate **real-time weather and events** APIs
+* 🤖 Experiment with **deep learning models**
+* 🗄️ Migrate to a database-backed system (Postgres/MongoDB)
+* 📱 Build a **Progressive Web App (PWA)**
 
 ---
 
+## 👤 Author
 
----
-
-## About Me
-### 👤 Author
-
-**Rithik Srivastava** 
-
-📧 Email: 24082046@scale.iitrpr.ac.in
-
-👨‍🎓 Student Code: IITRPRAI_24082046
-
-🏛️ College: Indian Institute of Technology, Ropar 
+**Rithik Srivastava**
+📧 [24082046@scale.iitrpr.ac.in](mailto:24082046@scale.iitrpr.ac.in)
+🏛️ Indian Institute of Technology, Ropar
 
 ---
 
 ## 🌐 Live Project
-👉 **[Try Wanderwise on Render](https://wanderwise-travel-recommendation-g90r.onrender.com)**
+
+👉 [**Try Wanderwise Here**](https://wanderwise-travel-recommendation-g90r.onrender.com)
+
+```
