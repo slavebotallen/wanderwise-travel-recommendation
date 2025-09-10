@@ -1,0 +1,63 @@
+/* static/style.css - Shared styling for Wanderwise */
+
+body {
+  background: linear-gradient(135deg, #f0f9ff, #e6f7f1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+.navbar {
+  background: #1565c0;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  color: #fff !important;
+}
+
+.card-custom {
+  border-radius: 20px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.card-custom:hover {
+  transform: translateY(-4px);
+}
+
+.btn-primary {
+  border-radius: 12px;
+  background: #1976d2;
+  border: none;
+}
+
+.btn-primary:hover {
+  background: #0d47a1;
+}
+
+.btn-success {
+  border-radius: 12px;
+  background: #2e7d32;
+  border: none;
+}
+
+.btn-success:hover {
+  background: #1b5e20;
+}
+
+footer {
+  background: #1565c0;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  margin-top: 40px;
+  border-radius: 12px;
+}
+
+h1, h2, h4, h5 {
+  font-weight: 600;
+}
+
+section {
+  margin-bottom: 40px;
+}
