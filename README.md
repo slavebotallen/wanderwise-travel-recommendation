@@ -102,11 +102,14 @@ wanderwise-travel-recommendation/
 
 ---
 
-## 👤 Author
-**Rithik Srivastava**  
-📧 Email: 24082046@scale.iitrpr.ac.in
-Student Code: IITRPRAI_24082046
-College: Indian Institute of Technology, Ropar
+## ---
+### 👤 Author
+
+**Rithik Srivastava** 📧 Email: 24082046@scale.iitrpr.ac.in
+
+👨‍🎓 Student Code: IITRPRAI\_24082046
+
+🏛️ College: Indian Institute of Technology, Ropar
 
 ---
 
